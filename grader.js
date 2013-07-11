@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
-        fs.writeFile("result.json", result, function(err) {
+        fs.writeFile("result.json", "result", function(err) {
     if(err) {
         console.log(err);
     } else {
