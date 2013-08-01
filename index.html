@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <title>Teletours</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
     <style type="text/css">
 
       /* Large desktop */
@@ -96,15 +98,16 @@
         color: #ccccff;
       }
     </style>
-  <script type="text/javascript">var new_nav = new function() {};var x;var old_navigator = window.navigator;for (x in navigator) {if (typeof navigator[x] == 'function') {eval("new_nav." + x + " = function() { return old_navigator." + x + "();};");} else {eval("new_nav." + x + " = navigator." + x + ";");}}new_nav.userAgent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5";new_nav.vendor = "Apple, Inc.";window.navigator = new_nav;</script><style id="__web-inspector-hide-shortcut-style__" type="text/css">.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ * { visibility: hidden !important; }</style></head>
-  <body style="">
+  </head>
+  <body>
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -137,18 +140,19 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">__Without the hassle!__</p>
+          <p class="lead">___Without the hassle!___</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -169,6 +173,7 @@
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -177,17 +182,23 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -197,32 +208,21 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://spectrum.ieee.org/img/double_tele-1344927350683.jpg">
+          <img class="img-polaroid"  alt="At the museumhttp" src="http://spectrum.ieee.org/img/double_tele-1344927350683.jpg">
         </div>
-        <div class="span5 copy">
-          <p>Ever wish to explore the Serengeti, climb the slopes of the majestic Mount Kilimanjaro?!</p><p>Adventure is an exhilirating joy but there comes much pain and agony with it - and that's before you've even gotten on the plane. Besides the oft-debilitating cost there are other annoyances e.g. visas, immunizations, travel itineraries, etc.</p>
-  <p>With Teletours you can skip all that! See what you want, when you want for a fraction of the time and energy!</p>
-</div>
-      </div>
-
+         <div class="span5 copy">
+          <p>Ever wish to explore the Serengeti, climb the slopes of the majestic Mount Kilimanjaro?!</p>
+          <p>Adventure is an exhilirating joy but there comes much pain and agony with it - and that's before you've even gotten on the plane. Besides the oft-debilitating cost there are other annoyances e.g. visas, immunizations, travel itineraries, etc.</p>
+          <p>With Teletours you can skip all that! See what you want, when you want for a fraction of the time and energy!</p>
+        </div>
+       </div>
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Now, how is that for exciting?! With our innovative service you can have the time of your life without ever leaving your couch! dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
+            Now, how is that for exciting?! With our innovative service you can have the time of your life without ever leaving your couch!</p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://i.imgur.com/wPfWYLL.jpg?1" title="Hosted by imgur.com">
+          <img class="img-polaroid"  alt="The great outdoors!" src="http://i.imgur.com/wPfWYLL.jpg?1">
         </div>
       </div>
 
@@ -235,11 +235,12 @@
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
                     What does FAQ stand for?
                   </a>
                 </div>
-                <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+                <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
                     Frequently Asked Question.
                   </div>
@@ -247,11 +248,12 @@
               </div>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
                     What's a Frequently Asked Question?
                   </a>
                 </div>
-                <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+                <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
                     A question which is commonly asked by users.
                   </div>
@@ -274,9 +276,5 @@
         </div>
       </div>
     </div>
-  
-
-
-
-BB
-</body></html>
+  </body>
+</html>
